@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>홍길동 — Frontend Developer</title>
+    <meta
+      name="description"
+      content="홍길동의 개인 포트폴리오. 웹 인터페이스와 제품 경험을 설계하고 구현합니다."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Outfit:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">본문으로 건너뛰기</a>
+
+    <header class="site-header" id="top">
+      <div class="container header-inner">
+        <a class="logo" href="#top" aria-label="홍길동 홈">
+          <span class="logo-mark" aria-hidden="true">HG</span>
+          <span class="logo-text">홍길동</span>
+        </a>
+
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-nav"
+        >
+          <span class="sr-only">메뉴 열기</span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </button>
+
+        <nav class="site-nav" id="site-nav" aria-label="주요">
+          <ul>
+            <li><a href="#about">소개</a></li>
+            <li><a href="#projects">프로젝트</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero" aria-labelledby="hero-title">
+        <img
+          class="hero-image"
+          src="assets/hero.jpg"
+          alt="따뜻한 조명이 있는 현대적인 작업 공간과 노트북"
+        />
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+          <p class="eyebrow">Frontend Developer</p>
+          <h1 id="hero-title">
+            홍길동입니다.<br />
+            <em>조용하고 정확한</em> 웹을 만듭니다.
+          </h1>
+          <p class="hero-lead">
+            인터페이스의 리듬과 디테일에 집중하는 프론트엔드 개발자입니다.
+            사용자가 한 번에 이해되는 화면을 설계하고 구현합니다.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">프로젝트 보기</a>
+            <a class="btn btn-ghost" href="#contact">연락하기</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <div class="container about-grid">
+          <div>
+            <p class="eyebrow">About</p>
+            <h2>제품이 말을 아끼게 하는 화면</h2>
+          </div>
+          <p>
+            서울을 기반으로 웹 프론트엔드를 다룹니다. HTML, CSS, JavaScript를
+            중심으로 레이아웃, 모션, 접근성을 한 덩어리로 생각합니다. 화려한
+            효과보다 읽히는 구조와 안정적인 인터랙션을 우선합니다.
+          </p>
+        </div>
+      </section>
+
+      <section class="projects" id="projects">
+        <div class="container">
+          <div class="section-head">
+            <p class="eyebrow">Selected Work</p>
+            <h2>프로젝트</h2>
+          </div>
+
+          <div class="project-grid">
+            <a class="project-card" href="project-nori.html">
+              <div class="project-thumb">
+                <img
+                  src="assets/project-travel.jpg"
+                  alt="여행 일정 앱 화면이 표시된 노트북"
+                />
+              </div>
+              <div class="project-body">
+                <p class="project-meta">2025 · Web App</p>
+                <h3>Nori Route</h3>
+                <p>
+                  하루 단위로 동선을 짜는 여행 플래너. 지도와 카드 UI를
+                  연결해 일정 변경이 바로 반영되도록 구성했습니다.
+                </p>
+                <ul class="tags">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                </ul>
+              </div>
+            </a>
+
+            <a class="project-card" href="project-ledger.html">
+              <div class="project-thumb">
+                <img
+                  src="assets/project-finance.jpg"
+                  alt="가계부 대시보드가 표시된 태블릿"
+                />
+              </div>
+              <div class="project-body">
+                <p class="project-meta">2024 · Dashboard</p>
+                <h3>Ledger Quiet</h3>
+                <p>
+                  지출 흐름을 한 화면에서 읽는 개인 가계 대시보드. 차트와
+                  카테고리를 단순화해 숫자보다 패턴이 먼저 보이게 했습니다.
+                </p>
+                <ul class="tags">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                </ul>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <div class="container contact-inner">
+          <p class="eyebrow">Contact</p>
+          <h2>다음 작업을 이야기해 볼까요.</h2>
+          <p>
+            협업, 프리랜스, 피드백 모두 환영합니다.
+            <a href="mailto:hello@gildong.dev">hello@gildong.dev</a>
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> 홍길동</p>
+        <a href="#top">맨 위로</a>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

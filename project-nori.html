@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nori Route — 홍길동</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Outfit:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="page-project">
+    <a class="skip-link" href="#main">본문으로 건너뛰기</a>
+
+    <header class="site-header is-scrolled" id="top">
+      <div class="container header-inner">
+        <a class="logo" href="index.html" aria-label="홍길동 홈">
+          <span class="logo-mark" aria-hidden="true">HG</span>
+          <span class="logo-text">홍길동</span>
+        </a>
+
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-nav"
+        >
+          <span class="sr-only">메뉴 열기</span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </button>
+
+        <nav class="site-nav" id="site-nav" aria-label="주요">
+          <ul>
+            <li><a href="index.html#about">소개</a></li>
+            <li><a href="index.html#projects" class="is-active">프로젝트</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <div class="container project-hero">
+        <a class="back-link" href="index.html#projects">← 프로젝트 목록</a>
+        <img
+          src="assets/project-travel.jpg"
+          alt="여행 일정 앱 화면이 표시된 노트북"
+        />
+      </div>
+
+      <article class="project-detail">
+        <div class="container">
+          <header class="project-detail-head">
+            <p class="eyebrow">2025 · Web App</p>
+            <h1>Nori Route</h1>
+            <ul class="tags">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul>
+          </header>
+
+          <div class="project-copy">
+            <div>
+              <h2>역할</h2>
+              <p>기획, UI 설계, 프론트엔드 구현</p>
+            </div>
+            <div>
+              <h2>개요</h2>
+              <p>
+                하루 단위로 동선을 짜는 여행 플래너입니다. 지도와 일정 카드를
+                한 화면에 두고, 장소를 옮기면 경로와 소요 시간이 바로
+                갱신되도록 구성했습니다.
+              </p>
+              <h2>작업 내용</h2>
+              <ul>
+                <li>일정 카드를 드래그해 순서를 바꾸는 인터랙션</li>
+                <li>선택 장소에 맞춰 지도 포커스가 따라가는 레이아웃</li>
+                <li>모바일에서 지도와 목록을 전환하는 뷰</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> 홍길동</p>
+        <a href="#top">맨 위로</a>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
